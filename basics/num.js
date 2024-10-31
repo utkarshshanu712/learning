@@ -4,6 +4,9 @@ console.log(score+balance)
 console.log(balance+score)
 console.log(balance)
 
+console.log(typeof score)
+console.log(typeof balance)
+
 console.log(balance.toFixed(4))
 console.log(balance.toPrecision(5))
 console.log(balance.toLocaleString('en-In'))
