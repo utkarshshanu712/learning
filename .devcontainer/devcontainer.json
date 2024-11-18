@@ -24,9 +24,12 @@
 				"wayou.vscode-todo-highlight"
 			],
 			"settings": {
-				"editor.fontSize": 20,
-				"terminal.integrated.fontSize": 15,
-				"editor.wordWrap": "on"
+				"editor.fontFamily": "Mono Lisa",
+    "editor.fontSize": 18,
+    "terminal.integrated.fontSize": 18,
+    "window.zoomLevel": 1,
+    "editor.wordWrap": "on"
+
 			}
 			
 		}
