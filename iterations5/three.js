@@ -1,25 +1,30 @@
-// //  
-// const arr=[1,2,3,4,5]
-
-// for (const num of arr) {
-//     console.log(num);
+const arr =[1,2,3,4,5,6]
+for (const num of arr) {
+    // console.log(num)
     
-// }
+}
 
-// const greet = "hello world!"
+const greetings ="hello"
 
-// for (const hi of greet) {
-//     console.log(`each char is ${hi}`)
-// }
-//  Maps
+for (const greet of greetings) {
+    // console.log(`each char is ${greet}`)
+    
+}
 
-const map = new Map()
-map.set('In',"India")
-map.set("fr","france")
+//Map
+
+const map = new Map
+map.set('India' , "In")
+map.set('France' , "FR")
 
 console.log(map)
 
 for (const [key,value] of map) {
-    console.log(key,"--" ,value);
+    console.log( key,"---", value)
     
+}
+
+const myobj ={
+    "g1" : "nfs",
+    "g2" : "spiderman"
 }
