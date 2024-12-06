@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Dom</title>
+  </head>
+  <body style="background-color: #212121 ;color:#fff;" >
+    <ul class="langauage">
+      <li>Javascript</li>
+    </ul>
+  </body>
+  <script>
+    function addlang(lang){
+        const li=document.createElement('li')
+        li.innerHTML=`${lang}`
+        document.querySelector('.langauage').appendChild(li)
+    }
+    addlang('python')
+    addlang('TYpescript')//NOt good for big project because it has to traverse the tree again
+
+    function optilang(lang){
+        const li= document.createElement('li');
+        li.appendChild(document.createTextNode(lang));
+        document.querySelector('.langauage').appendChild(li)
+    }
+    optilang('golang')
+//Edit
+const second = document.querySelector('li:nth-child(2)')
+// second.innerHTML='Mojo'
+// document.querySelector('li:nth-child(2)').appendChild(li)
+const newli=document.createElement('li')
+newli.textContent='Mojo'
+second.replaceWith(newli)
+// edit
+const first=document.querySelector('li:nth-child(1)')
+
+const secondli= document.createElement('li')
+secondli.textContent='Java'
+
+first.replaceWith(secondli)
+// remove
+const last= document.querySelector('li:last-child')
+last.remove()
+  </script>
+</html>

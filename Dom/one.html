@@ -2,16 +2,32 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Dom Learning</title>
+    <title>Dom</title>
 </head>
-<body>
-    <div class="bg-black">
-        <h1 class="heading">Dom Learning on chai aur code</h1>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto culpa eveniet pariatur tempore? Tempore, adipisci vitae blanditiis repellat, incidunt vero dolorem culpa atque exercitationem ad quas dicta laborum sequi omnis.
-        Quaerat enim consequuntur dolore explicabo dolor asperiores iure repellat, nobis cum pariatur! Quisquam voluptas quaerat maxime provident, soluta eaque, iure consectetur nostrum veniam corporis dolore numquam nihil qui esse id?
-        Ratione minima, perspiciatis ipsum ipsa et numquam molestiae ullam repellat aperiam obcaecati soluta tempora accusamus, modi, quis sed dignissimos magni eum quaerat rem cum! Aliquam id cumque maxime maiores quod.
-        Maiores et tenetur quibusdam amet sed quisquam dolor odio at, recusandae magnam dolores, totam officiis, facere labore unde ipsum tempore provident molestiae magni illum atque beatae doloribus obcaecati. Reprehenderit, at!
-        Ex eum veniam quasi! Accusantium iure quod cumque, labore exercitationem nesciunt dolorum, quaerat commodi tenetur veniam est repellendus, eveniet sit laboriosam. Sequi sunt quidem beatae neque vero eligendi iste libero.</p>
-    </div>
+<body style="background-color: #212121;
+color:#fff;">
+    <div class="parent">
+    <div class="day">Monday</div>
+    <div class="day">Tuesday</div>
+    <div class="day">Wednesday</div>
+    <div class="day">Thursday</div>
+    </div>  
+    <script>
+        const parent= document.querySelector('.parent')
+        console.log(parent);
+        console.log(parent.children[1].innerHTML);
+for (let i = 0; i< parent.children.length; i++) {
+  const element = parent.children [i];
+  console.log(element.innerHTML)
+//   console.log(parent.children[i].innerHTML)
+    }
+parent.children[1].style.color='orange'
+console.log(parent.firstElementChild)
+console.log(parent.lastElementChild)
+const dayone =document.querySelector('.day')
+console.log(dayone);
+console.log(dayone.parentElementSibling);
+console.log('Nodes:',parent.childNodes)
+    </script>
 </body>
 </html>
