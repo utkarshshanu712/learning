@@ -1,0 +1,101 @@
+body{
+    background-image: url('https://images.unsplash.com/photo-1492496913980-501348b61469?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: fill;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-size: 6vw; /* Increased font size for better readability on mobile devices */
+    font-weight: bold;
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: #0C2237;
+}
+
+.div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px; /* Increased padding for better spacing on mobile devices */
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.div label{
+    margin-bottom: 15px; /* Increased margin for better spacing on mobile devices */
+    color: aliceblue;
+    font-size: 18px; /* Increased font size for better readability on mobile devices */
+}
+
+.div input{
+    margin-bottom: 25px; /* Increased margin for better spacing on mobile devices */
+    padding: 15px; /* Increased padding for better spacing on mobile devices */
+    border: none;
+    border-radius: 20px;
+    font-size: 20px; /* Increased font size for better readability on mobile devices */
+    color: aliceblue;
+    background-color: rgba(255, 255, 255, 0.2);
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.div button{
+    padding: 15px 30px; /* Increased padding for better spacing on mobile devices */
+    border: none;
+    border-radius: 20px;
+    font-size: 20px; /* Increased font size for better readability on mobile devices */
+    color: aliceblue;
+    background-color: rgba(0, 255, 0, 0.8);
+    cursor: pointer;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.div button:hover{
+    background-color: rgba(0, 255, 0, 0.9);
+}
+
+.div #result{
+    margin-top: 25px; /* Increased margin for better spacing on mobile devices */
+    color: aliceblue;
+    font-size: 18px; /* Increased font size for better readability on mobile devices */
+}
+
+/* Media queries for different screen sizes */
+@media (min-width: 600px) {
+    body {
+        font-size: 48px; /* Adjusted font size for larger screens */
+    }
+
+    .div {
+        width: 80%;
+        max-width: 500px;
+    }
+
+    .div button, .div input {
+        width: 80%;
+    }
+}
+
+@media (min-width: 1024px) {
+    body {
+        font-size: 58px; /* Adjusted font size for larger screens */
+    }
+
+    .div {
+        width: 60%;
+        max-width: 600px;
+    }
+
+    .div button, .div input {
+        width: 60%;
+    }
+}
